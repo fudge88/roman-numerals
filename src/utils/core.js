@@ -19,19 +19,25 @@ const getDescendingOrder = Object.keys(romanLookUp).sort((a, b) => b - a);
 
 // create a function to convert the number to a roman numeral
 export const romanNumeralGenerator = (num) => {
-	//  validate the number to be between 1 - 3999 and to be a number type
+	//  validate
 	if (num < 1 || num > 3999 || typeof num !== 'number') {
 		console.log('Invalid number');
 		return;
 	}
+	let result = '';
+	// iterate through the sorted array
+	for (let i = 0; i < getDescendingOrder.length; i++) {
+		const currentValue = getDescendingOrder[i];
+		const romanNumeral = romanLookUp[currentValue];
 
-	console.log('Sorted values:', getDescendingOrder);
-
-	// convert the number to a roman numeral
-	const result = romanLookUp[num];
-	console.log('Converted roman numeral:', result);
+		// add the symbol to the result and subtract the value from number
+		while (num >= currentValue) {
+			result += romanNumeral;
+			num -= currentValue;
+		}
+	}
 
 	return result;
 };
 
-romanNumeralGenerator(10);
+romanNumeralGenerator(1640);
