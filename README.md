@@ -1,12 +1,29 @@
-# React + Vite
+# Coding Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Roman Numerals Plan
 
-Currently, two official plugins are available:
+- create an object for the Roman Numerals to act as a look up table
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- create a function to convert the number to a roman numeral
 
-## Expanding the ESLint configuration
+- validate the number to be between 1 - 3999 and to be a number type
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- sort object into descending order
+
+- use a for loop to iterate through the sorted array
+
+- get the current value and the roman numeral for the current value
+
+- use a while loop to add the symbol to the result and subtract the value from number
+
+- return the string
+
+-TEST!!!
+
+- create a component to accept an input and output the roman numeral
+
+- create a function to handle the input change and output the roman numeral
+
+- handle errors
+
+- test the component
