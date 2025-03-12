@@ -36,7 +36,6 @@ export const romanNumeralGenerator = (num) => {
 			num -= currentValue;
 		}
 	}
-
 	return result;
 };
 
