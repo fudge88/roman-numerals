@@ -1,13 +1,10 @@
-import Typography from '@mui/joy/Typography';
 import './App.css';
+import Header from './components/Heading';
 
 function App() {
 	return (
 		<>
-			test
-			<Typography color="danger" level="h1">
-				joy ui test
-			</Typography>
+			<Header />
 		</>
 	);
 }
