@@ -1,6 +1,5 @@
 import * as React from 'react';
-import Stack from '@mui/joy/Stack';
-import Typography from '@mui/joy/Typography';
+import { Stack, Typography } from '@mui/joy';
 
 const Header = () => {
 	return (
