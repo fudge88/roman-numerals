@@ -20,6 +20,10 @@ const getDescendingOrder = Object.keys(romanLookUp).sort((a, b) => b - a);
 // create a function to convert the number to a roman numeral
 export const romanNumeralGenerator = (num) => {
 	//  validate the number to be between 1 - 3999 and to be a number type
+	if (num < 1 || num > 3999 || typeof num !== 'number') {
+		console.log('Invalid number');
+		return;
+	}
 
 	console.log('Sorted values:', getDescendingOrder);
 
@@ -30,4 +34,4 @@ export const romanNumeralGenerator = (num) => {
 	return result;
 };
 
-romanNumeralGenerator(1000);
+romanNumeralGenerator(10);
