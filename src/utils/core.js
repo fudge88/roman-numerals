@@ -14,21 +14,20 @@ const romanLookUp = {
 	1: 'I',
 };
 
+// sort object into descending order
+const getDescendingOrder = Object.keys(romanLookUp).sort((a, b) => b - a);
+
 // create a function to convert the number to a roman numeral
 export const romanNumeralGenerator = (num) => {
-	// Log the input number
-	console.log('Input number:', num);
+	//  validate the number to be between 1 - 3999 and to be a number type
 
-	// Log the lookup table
-	console.log('Roman numeral lookup table:', romanLookUp);
+	console.log('Sorted values:', getDescendingOrder);
 
 	// convert the number to a roman numeral
 	const result = romanLookUp[num];
 	console.log('Converted roman numeral:', result);
-	return result;
-	//  validate the number to be between 1 - 3999 and to be a number type
 
-	// sort object into descending order
+	return result;
 };
 
 romanNumeralGenerator(1000);
