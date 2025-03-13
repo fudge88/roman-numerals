@@ -7,7 +7,6 @@ const getDescendingOrder = Object.keys(romanLookUp).sort((a, b) => b - a);
 export const romanNumeralGenerator = (num) => {
 	//  validate
 	if (num < 1 || num > 3999 || typeof num !== 'number') {
-		console.log('Invalid number');
 		return;
 	}
 	let result = '';

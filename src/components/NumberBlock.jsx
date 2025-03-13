@@ -29,7 +29,6 @@ const NumberBlock = () => {
 				setRomanNumeral('No letters - No symbols ...Just numbers!');
 			}
 		} catch (error) {
-			console.error('Error:', error.message);
 			setRomanNumeral('Invalid input');
 		}
 	};
