@@ -24,5 +24,3 @@ export const romanNumeralGenerator = (num) => {
 	}
 	return result;
 };
-
-romanNumeralGenerator(1640);
